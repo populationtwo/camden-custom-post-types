@@ -22,7 +22,7 @@
  * @link       http://example.com
  * @since      1.0.0
  *
- * @package    Plugin_Name
+ * @package    Camden_Custom_Post_Types
  */
 
 // If uninstall not called from WordPress, then exit.
