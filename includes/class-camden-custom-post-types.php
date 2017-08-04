@@ -6,7 +6,7 @@
  * A class definition that includes attributes and functions used across both the
  * public-facing side of the site and the admin area.
  *
- * @link       http://example.com
+ * @link       http://population-2.com
  * @since      1.0.0
  *
  * @package    Camden_Custom_Post_Types
@@ -25,7 +25,7 @@
  * @since      1.0.0
  * @package    Camden_Custom_Post_Types
  * @subpackage Camden_Custom_Post_Types/includes
- * @author     Your Name <email@example.com>
+ * @author     Population2 <info@population-2.com>
  */
 class Camden_Custom_Post_Types {
 
@@ -68,7 +68,7 @@ class Camden_Custom_Post_Types {
 	 */
 	public function __construct() {
 
-		$this->plugin_name = 'plugin-name';
+		$this->plugin_name = 'camden-custom-post-types';
 		$this->version = '1.0.0';
 
 		$this->load_dependencies();
@@ -100,24 +100,24 @@ class Camden_Custom_Post_Types {
 		 * The class responsible for orchestrating the actions and filters of the
 		 * core plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-plugin-name-loader.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-camden-custom-post-types-loader.php';
 
 		/**
 		 * The class responsible for defining internationalization functionality
 		 * of the plugin.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-plugin-name-i18n.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-camden-custom-post-types-i18n.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-plugin-name-admin.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-camden-custom-post-types-admin.php';
 
 		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-plugin-name-public.php';
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-camden-custom-post-types-public.php';
 
 		$this->loader = new Camden_Custom_Post_Types_Loader();
 

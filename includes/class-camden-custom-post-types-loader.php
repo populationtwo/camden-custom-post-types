@@ -3,7 +3,7 @@
 /**
  * Register all actions and filters for the plugin
  *
- * @link       http://example.com
+ * @link       http://population-2.com
  * @since      1.0.0
  *
  * @package    Camden_Custom_Post_Types
@@ -19,7 +19,7 @@
  *
  * @package    Camden_Custom_Post_Types
  * @subpackage Camden_Custom_Post_Types/includes
- * @author     Your Name <email@example.com>
+ * @author     Population2 <info@population-2.com>
  */
 class Camden_Custom_Post_Types_Loader {
 

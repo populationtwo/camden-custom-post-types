@@ -5,7 +5,7 @@
  *
  * This file is used to markup the admin-facing aspects of the plugin.
  *
- * @link       http://example.com
+ * @link       http://population-2.com
  * @since      1.0.0
  *
  * @package    Camden_Custom_Post_Types
