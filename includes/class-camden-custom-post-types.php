@@ -73,7 +73,6 @@ class Camden_Custom_Post_Types {
 
 		$this->load_dependencies();
 		$this->set_locale();
-		$this->define_admin_hooks();
 		$this->define_public_hooks();
 
 	}
@@ -109,11 +108,6 @@ class Camden_Custom_Post_Types {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-camden-custom-post-types-i18n.php';
 
 		/**
-		 * The class responsible for defining all actions that occur in the admin area.
-		 */
-		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-camden-custom-post-types-admin.php';
-
-		/**
 		 * The class responsible for defining all actions that occur in the public-facing
 		 * side of the site.
 		 */
@@ -137,19 +131,6 @@ class Camden_Custom_Post_Types {
 		$plugin_i18n = new Camden_Custom_Post_Types_i18n();
 
 		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
-
-	}
-
-	/**
-	 * Register all of the hooks related to the admin area functionality
-	 * of the plugin.
-	 *
-	 * @since    1.0.0
-	 * @access   private
-	 */
-	private function define_admin_hooks() {
-
-		$plugin_admin = new Camden_Custom_Post_Types_Admin( $this->get_plugin_name(), $this->get_version() );
 
 	}
 

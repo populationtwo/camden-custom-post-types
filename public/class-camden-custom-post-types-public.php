@@ -68,23 +68,23 @@ class Camden_Custom_Post_Types_Public {
 	public function camden_register_post_type_ministry() {
 
 		$labels = array(
-			'name'               => _x( 'Ministries', 'Post Type General Name', 'camden' ),
-			'singular_name'      => _x( 'Ministry', 'Post Type Singular Name', 'camden' ),
-			'menu_name'          => __( 'Ministry', 'camden' ),
-			'parent_item_colon'  => __( 'Parent Ministry:', 'camden' ),
-			'all_items'          => __( 'All Ministries:', 'camden' ),
-			'view_item'          => __( 'View Ministry', 'camden' ),
-			'add_new_item'       => __( 'Add New Ministry', 'camden' ),
-			'add_new'            => __( 'New Ministry', 'camden' ),
-			'edit_item'          => __( 'Edit Ministry', 'camden' ),
-			'update_item'        => __( 'Update Ministry', 'camden' ),
-			'search_items'       => __( 'Search ministries', 'camden' ),
-			'not_found'          => __( 'No ministries found', 'camden' ),
-			'not_found_in_trash' => __( 'No ministries found in Trash', 'camden' ),
+			'name'               => _x( 'Ministries', 'Post Type General Name', 'camden-custom-post-type' ),
+			'singular_name'      => _x( 'Ministry', 'Post Type Singular Name', 'camden-custom-post-type' ),
+			'menu_name'          => __( 'Ministry', 'camden-custom-post-type' ),
+			'parent_item_colon'  => __( 'Parent Ministry:', 'camden-custom-post-type' ),
+			'all_items'          => __( 'All Ministries:', 'camden-custom-post-type' ),
+			'view_item'          => __( 'View Ministry', 'camden-custom-post-type' ),
+			'add_new_item'       => __( 'Add New Ministry', 'camden-custom-post-type' ),
+			'add_new'            => __( 'New Ministry', 'camden-custom-post-type' ),
+			'edit_item'          => __( 'Edit Ministry', 'camden-custom-post-type' ),
+			'update_item'        => __( 'Update Ministry', 'camden-custom-post-type' ),
+			'search_items'       => __( 'Search ministries', 'camden-custom-post-type' ),
+			'not_found'          => __( 'No ministries found', 'camden-custom-post-type' ),
+			'not_found_in_trash' => __( 'No ministries found in Trash', 'camden-custom-post-type' ),
 		);
 		$args   = array(
-			'label'              => __( 'ministry', 'camden' ),
-			'description'        => __( 'Ministry information pages', 'camden' ),
+			'label'              => __( 'ministry', 'camden-custom-post-type' ),
+			'description'        => __( 'Ministry information pages', 'camden-custom-post-type' ),
 			'labels'             => $labels,
 			'supports'           => array( 'title', 'editor', 'excerpt', 'thumbnail', 'custom-fields', ),
 			'taxonomies'         => array( 'group' ),
@@ -101,28 +101,28 @@ class Camden_Custom_Post_Types_Public {
 			'menu_position'      => 5,
 			'menu_icon'          => 'dashicons-awards'
 		);
-		register_post_type( __( 'ministry', 'camden' ), $args );
+		register_post_type( __( 'ministry', 'camden-custom-post-type' ), $args );
 
 	}
 
 	public function camden_ministry_group_taxonomy() {
 
 		$labels = array(
-			'name'                       => _x( 'Groups', 'Taxonomy General Name', 'camden' ),
-			'singular_name'              => _x( 'Group', 'Taxonomy Singular Name', 'camden' ),
-			'menu_name'                  => __( 'Group', 'camden' ),
-			'all_items'                  => __( 'All Groups', 'camden' ),
-			'parent_item'                => __( 'Parent Group', 'camden' ),
-			'parent_item_colon'          => __( 'Parent Group:', 'camden' ),
-			'new_item_name'              => __( 'New Group Name', 'camden' ),
-			'add_new_item'               => __( 'Add New Group', 'camden' ),
-			'edit_item'                  => __( 'Edit Group', 'camden' ),
-			'update_item'                => __( 'Update Group', 'camden' ),
-			'separate_items_with_commas' => __( 'Separate groups with commas', 'camden' ),
-			'search_items'               => __( 'Search groups', 'camden' ),
-			'add_or_remove_items'        => __( 'Add or remove groups', 'camden' ),
-			'choose_from_most_used'      => __( 'Choose from the most used groups', 'camden' ),
-			'not_found'                  => __( 'Not Found', 'camden' ),
+			'name'                       => _x( 'Groups', 'Taxonomy General Name', 'camden-custom-post-type' ),
+			'singular_name'              => _x( 'Group', 'Taxonomy Singular Name', 'camden-custom-post-type' ),
+			'menu_name'                  => __( 'Group', 'camden-custom-post-type' ),
+			'all_items'                  => __( 'All Groups', 'camden-custom-post-type' ),
+			'parent_item'                => __( 'Parent Group', 'camden-custom-post-type' ),
+			'parent_item_colon'          => __( 'Parent Group:', 'camden-custom-post-type' ),
+			'new_item_name'              => __( 'New Group Name', 'camden-custom-post-type' ),
+			'add_new_item'               => __( 'Add New Group', 'camden-custom-post-type' ),
+			'edit_item'                  => __( 'Edit Group', 'camden-custom-post-type' ),
+			'update_item'                => __( 'Update Group', 'camden-custom-post-type' ),
+			'separate_items_with_commas' => __( 'Separate groups with commas', 'camden-custom-post-type' ),
+			'search_items'               => __( 'Search groups', 'camden-custom-post-type' ),
+			'add_or_remove_items'        => __( 'Add or remove groups', 'camden-custom-post-type' ),
+			'choose_from_most_used'      => __( 'Choose from the most used groups', 'camden-custom-post-type' ),
+			'not_found'                  => __( 'Not Found', 'camden-custom-post-type' ),
 		);
 		$args   = array(
 			'labels'            => $labels,
@@ -133,31 +133,31 @@ class Camden_Custom_Post_Types_Public {
 			'show_in_nav_menus' => true,
 			'show_tagcloud'     => true,
 		);
-		register_taxonomy( __( 'ministry-group', 'camden' ), array( __( 'ministry', 'camden' ) ), $args );
+		register_taxonomy( __( 'ministry-group', 'camden-custom-post-type' ), array( __( 'ministry', 'camden-custom-post-type' ) ), $args );
 	}
 
 	public function camden_ministry_updated_messages() {
 
 		global $post;
 
-		$messages[ __( 'ministry', 'camden' ) ] =
+		$messages[ __( 'ministry', 'camden-custom-post-type' ) ] =
 			array(
 				0  => '', // Unused. Messages start at index 1.
-				1  => sprintf( __( 'Ministry updated. <a href="%s">View ministry</a>', 'camden' ), esc_url( get_permalink() ) ),
-				2  => __( 'Custom field updated.', 'camden' ),
-				3  => __( 'Custom field deleted.', 'camden' ),
-				4  => __( 'Ministry updated.', 'camden' ),
+				1  => sprintf( __( 'Ministry updated. <a href="%s">View ministry</a>', 'camden-custom-post-type' ), esc_url( get_permalink() ) ),
+				2  => __( 'Custom field updated.', 'camden-custom-post-type' ),
+				3  => __( 'Custom field deleted.', 'camden-custom-post-type' ),
+				4  => __( 'Ministry updated.', 'camden-custom-post-type' ),
 				/* translators: %s: date and time of the revision */
-				5  => isset( $_GET['revision'] ) ? sprintf( __( 'Ministry restored to revision from %s', 'camden' ), wp_post_revision_title( (int) $_GET['revision'], false ) ) : false,
-				6  => sprintf( __( 'Ministry published. <a href="%s">View ministry</a>', 'camden' ), esc_url( get_permalink() ) ),
-				7  => __( 'Ministry saved.', 'camden' ),
-				8  => sprintf( __( 'Ministry submitted. <a target="_blank" href="%s">Preview ministry</a>', 'camden' ), esc_url( add_query_arg( 'preview', 'true', get_permalink() ) ) ),
+				5  => isset( $_GET['revision'] ) ? sprintf( __( 'Ministry restored to revision from %s', 'camden-custom-post-type' ), wp_post_revision_title( (int) $_GET['revision'], false ) ) : false,
+				6  => sprintf( __( 'Ministry published. <a href="%s">View ministry</a>', 'camden-custom-post-type' ), esc_url( get_permalink() ) ),
+				7  => __( 'Ministry saved.', 'camden-custom-post-type' ),
+				8  => sprintf( __( 'Ministry submitted. <a target="_blank" href="%s">Preview ministry</a>', 'camden-custom-post-type' ), esc_url( add_query_arg( 'preview', 'true', get_permalink() ) ) ),
 				9  => sprintf(
-					__( 'Ministry scheduled for: <strong>%1$s</strong>. <a target="_blank" href="%2$s">Preview ministry</a>', 'camden' ),
+					__( 'Ministry scheduled for: <strong>%1$s</strong>. <a target="_blank" href="%2$s">Preview ministry</a>', 'camden-custom-post-type' ),
 					// translators: Publish box date format, see http://php.net/date
-					date_i18n( __( 'M j, Y @ G:i', 'camden' ), strtotime( $post->post_date ) ), esc_url( get_permalink() )
+					date_i18n( __( 'M j, Y @ G:i', 'camden-custom-post-type' ), strtotime( $post->post_date ) ), esc_url( get_permalink() )
 				),
-				10 => sprintf( __( 'Ministry draft updated. <a target="_blank" href="%s">Preview ministry</a>', 'camden' ), esc_url( add_query_arg( 'preview', 'true', get_permalink() ) ) ),
+				10 => sprintf( __( 'Ministry draft updated. <a target="_blank" href="%s">Preview ministry</a>', 'camden-custom-post-type' ), esc_url( add_query_arg( 'preview', 'true', get_permalink() ) ) ),
 			);
 
 		return $messages;
@@ -168,24 +168,24 @@ class Camden_Custom_Post_Types_Public {
 	public function camden_register_post_type_slides() {
 
 		$labels = array(
-			'name'               => _x( 'Slides', 'Post Type General Name', 'camden' ),
-			'singular_name'      => _x( 'Slide', 'Post Type Singular Name', 'camden' ),
-			'menu_name'          => __( 'Slide', 'camden' ),
-			'parent_item_colon'  => __( 'Parent Slide:', 'camden' ),
-			'all_items'          => __( 'All Slides:', 'camden' ),
-			'view_item'          => __( 'Slide', 'camden' ),
-			'add_new_item'       => __( 'Add New Slide', 'camden' ),
-			'add_new'            => __( 'New Slide', 'camden' ),
-			'edit_item'          => __( 'Edit Slide', 'camden' ),
-			'update_item'        => __( 'Update Slide', 'camden' ),
-			'search_items'       => __( 'Search slides', 'camden' ),
-			'not_found'          => __( 'No slides found', 'camden' ),
-			'not_found_in_trash' => __( 'No slides found in Trash', 'camden' ),
+			'name'               => _x( 'Slides', 'Post Type General Name', 'camden-custom-post-type' ),
+			'singular_name'      => _x( 'Slide', 'Post Type Singular Name', 'camden-custom-post-type' ),
+			'menu_name'          => __( 'Slide', 'camden-custom-post-type' ),
+			'parent_item_colon'  => __( 'Parent Slide:', 'camden-custom-post-type' ),
+			'all_items'          => __( 'All Slides:', 'camden-custom-post-type' ),
+			'view_item'          => __( 'Slide', 'camden-custom-post-type' ),
+			'add_new_item'       => __( 'Add New Slide', 'camden-custom-post-type' ),
+			'add_new'            => __( 'New Slide', 'camden-custom-post-type' ),
+			'edit_item'          => __( 'Edit Slide', 'camden-custom-post-type' ),
+			'update_item'        => __( 'Update Slide', 'camden-custom-post-type' ),
+			'search_items'       => __( 'Search slides', 'camden-custom-post-type' ),
+			'not_found'          => __( 'No slides found', 'camden-custom-post-type' ),
+			'not_found_in_trash' => __( 'No slides found in Trash', 'camden-custom-post-type' ),
 		);
 
 		$args = array(
-			'label'              => __( 'slide', 'camden' ),
-			'description'        => __( 'Slide information pages', 'camden' ),
+			'label'              => __( 'slide', 'camden-custom-post-type' ),
+			'description'        => __( 'Slide information pages', 'camden-custom-post-type' ),
 			'labels'             => $labels,
 			'supports'           => array( 'title', 'thumbnail', 'custom-fields' ),
 			'public'             => true,
@@ -200,7 +200,7 @@ class Camden_Custom_Post_Types_Public {
 
 		);
 
-		register_post_type( __( 'slide', 'camden' ), $args );
+		register_post_type( __( 'slide', 'camden-custom-post-type' ), $args );
 
 
 	}
@@ -212,21 +212,21 @@ class Camden_Custom_Post_Types_Public {
 		$messages[ __( 'slide' ) ] =
 			array(
 				0  => '', // Unused. Messages start at index 1.
-				1  => sprintf( __( 'Slide updated. <a href="%s">View slide</a>', 'camden' ), esc_url( get_permalink() ) ),
-				2  => __( 'Custom field updated.', 'camden' ),
-				3  => __( 'Custom field deleted.', 'camden' ),
-				4  => __( 'Slide updated.', 'camden' ),
+				1  => sprintf( __( 'Slide updated. <a href="%s">View slide</a>', 'camden-custom-post-type' ), esc_url( get_permalink() ) ),
+				2  => __( 'Custom field updated.', 'camden-custom-post-type' ),
+				3  => __( 'Custom field deleted.', 'camden-custom-post-type' ),
+				4  => __( 'Slide updated.', 'camden-custom-post-type' ),
 				/* translators: %s: date and time of the revision */
-				5  => isset( $_GET['revision'] ) ? sprintf( __( 'Slide restored to revision from %s', 'camden' ), wp_post_revision_title( (int) $_GET['revision'], false ) ) : false,
-				6  => sprintf( __( 'Slide published. <a href="%s">View slide</a>', 'camden' ), esc_url( get_permalink() ) ),
-				7  => __( 'Slide saved.', 'camden' ),
-				8  => sprintf( __( 'Slide submitted. <a target="_blank" href="%s">Preview slide</a>', 'camden' ), esc_url( add_query_arg( 'preview', 'true', get_permalink() ) ) ),
+				5  => isset( $_GET['revision'] ) ? sprintf( __( 'Slide restored to revision from %s', 'camden-custom-post-type' ), wp_post_revision_title( (int) $_GET['revision'], false ) ) : false,
+				6  => sprintf( __( 'Slide published. <a href="%s">View slide</a>', 'camden-custom-post-type' ), esc_url( get_permalink() ) ),
+				7  => __( 'Slide saved.', 'camden-custom-post-type' ),
+				8  => sprintf( __( 'Slide submitted. <a target="_blank" href="%s">Preview slide</a>', 'camden-custom-post-type' ), esc_url( add_query_arg( 'preview', 'true', get_permalink() ) ) ),
 				9  => sprintf(
-					__( 'Slide scheduled for: <strong>%1$s</strong>. <a target="_blank" href="%2$s">Preview slide</a>', 'camden' ),
+					__( 'Slide scheduled for: <strong>%1$s</strong>. <a target="_blank" href="%2$s">Preview slide</a>', 'camden-custom-post-type' ),
 					// translators: Publish box date format, see http://php.net/date
-					date_i18n( __( 'M j, Y @ G:i', 'camden' ), strtotime( $post->post_date ) ), esc_url( get_permalink() )
+					date_i18n( __( 'M j, Y @ G:i', 'camden-custom-post-type' ), strtotime( $post->post_date ) ), esc_url( get_permalink() )
 				),
-				10 => sprintf( __( 'Slide draft updated. <a target="_blank" href="%s">Preview slide</a>', 'camden' ), esc_url( add_query_arg( 'preview', 'true', get_permalink() ) ) ),
+				10 => sprintf( __( 'Slide draft updated. <a target="_blank" href="%s">Preview slide</a>', 'camden-custom-post-type' ), esc_url( add_query_arg( 'preview', 'true', get_permalink() ) ) ),
 			);
 
 		return $messages;

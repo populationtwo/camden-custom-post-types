@@ -9,20 +9,20 @@
  * @author    Population2 <populationtwo@gmail.com>
  * @license   GPL-2.0+
  * @link      http://population-2.com
- * @copyright 2014 Population2
+ * @copyright 2017 Population2
  *
  * @wordpress-plugin
  * Plugin Name:       Camden Custom Post Type
  * Plugin URI:        http://population-2.com
  * Description:       Plugin to create custom post type on Camden theme.
- * Version:           0.0.1
+ * Version:           1.0.0
  * Author:            Population2
  * Author URI:
  * Text Domain:       camden-custom-post-type
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Domain Path:       /languages
- * GitHub Plugin URI:
+ * GitHub Plugin URI: https://github.com/populationtwo/camden-custom-post-types
  */
 
 // If this file is called directly, abort.
