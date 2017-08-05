@@ -15,7 +15,7 @@
  * Plugin Name:       Camden Custom Post Type
  * Plugin URI:        http://population-2.com
  * Description:       Plugin to create custom post type on Camden theme.
- * Version:           1.0.0
+ * Version:           1.1.0
  * Author:            Population2
  * Author URI:
  * Text Domain:       camden-custom-post-type

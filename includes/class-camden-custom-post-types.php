@@ -69,7 +69,7 @@ class Camden_Custom_Post_Types {
 	public function __construct() {
 
 		$this->plugin_name = 'camden-custom-post-types';
-		$this->version = '1.0.0';
+		$this->version = '1.1.0';
 
 		$this->load_dependencies();
 		$this->set_locale();
